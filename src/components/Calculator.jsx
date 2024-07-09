@@ -33,9 +33,9 @@ export default function Calculator() {
   }
 
   function handleFunc(event) {
+    setMinusClicked(false);
     setFuncClicked(true);
     setFuncChosen(event.target.id);
-    setMinusClicked(false);
 
     if (funcChosen == "+") {
       setMain((prevState) => Number(prevState) + Number(secondary));
@@ -56,9 +56,12 @@ export default function Calculator() {
 
   function handleMinus() {
     setMinusClicked(true);
-    secondary
-      ? setSecondary((prevState) => -prevState)
-      : setMain((prevState) => -prevState);
+    // secondary
+    //   ? setSecondary((prevState) => -prevState)
+    //   : setMain((prevState) => -prevState);  //previous incorrect
+
+    !secondary && !funcClicked && setMain((prevState) => -prevState); 
+    main !== 0 && funcClicked && setSecondary((prevState) => -prevState);
   }
 
   function handlePercent() {
