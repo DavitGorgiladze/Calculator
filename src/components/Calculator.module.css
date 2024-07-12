@@ -60,9 +60,9 @@
 }
 
 .functions-dark div:active {
-background-color: white;
-color: black;
-font-weight: bold;
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .functions-orange-container {
@@ -99,10 +99,10 @@ font-weight: bold;
   width: 230px;
   height: 300px;
   position: absolute;
-  display: flex;
+  /* display: flex;
   overflow: clip;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: flex-start; */
 }
 
 .numbers div {
@@ -114,10 +114,67 @@ font-weight: bold;
   margin: 0;
 }
 
-.numbers div:active {
-  background-color: rgb(59, 57, 57);
+/* new below except zero first line */
+.num7 {
+  position: absolute;
+  left: 0;
+}
+.num8 {
+  position: absolute;
+  left: 76px;
+}
+.num9 {
+  position: absolute;
+  left: 152px;
+}
+.num6 {
+  position: absolute;
+  left: 152px;
+  top: 66px;
+}
+.num5 {
+  position: absolute;
+  left: 76px;
+  top: 66px;
+}
+.num4 {
+  position: absolute;
+  left: 0;
+  top: 66px;
+}
+.num3 {
+  position: absolute;
+  left: 152px;
+  top: 132px;
+}
+.num2 {
+  position: absolute;
+  left: 76px;
+  top: 132px;
+}
+
+.num1 {
+  position: absolute;
+  left: 0;
+  top: 132px;
 }
 
 .zero {
   width: 111.6px !important;
+  left: 0;
+  top: 196px;
+  position: absolute;
+}
+
+.numdot {
+  position: absolute;
+  left: 152px;
+  top: 196px;
+}
+
+/* new ^ except zero first line */
+
+
+.numbers div:active {
+  background-color: rgb(59, 57, 57);
 }
