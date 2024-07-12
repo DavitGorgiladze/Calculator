@@ -44,6 +44,7 @@
   padding-bottom: 5px;
   padding-right: 25px;
   font-size: 20px;
+  
 }
 
 .functions-dark {
@@ -57,6 +58,12 @@
   border: 1px solid rgb(32, 28, 28);
   width: 35px;
   text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .functions-dark div:active {
@@ -86,6 +93,12 @@
   border: 1px solid rgb(32, 28, 28);
   width: 35px;
   text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .functions-orange div:active {
