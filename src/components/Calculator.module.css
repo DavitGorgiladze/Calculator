@@ -44,6 +44,7 @@
   padding-bottom: 5px;
   padding-right: 25px;
   font-size: 20px;
+  
 }
 
 .functions-dark {
@@ -192,7 +193,6 @@
 }
 
 /* new ^ except zero first line */
-
 
 .numbers div:active {
   background-color: rgb(59, 57, 57);
