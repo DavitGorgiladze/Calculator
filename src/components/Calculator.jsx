@@ -55,12 +55,12 @@ export default function Calculator() {
   }
 
   function handleMinus() {
-    setMinusClicked(true);
+    setMinusClicked(true); // use prevState to avoid bug for minus double click that does not work after pressing some function. The latter on the other hand causes bug for secondary, namely, adds number to 0.
     // secondary
     //   ? setSecondary((prevState) => -prevState)
     //   : setMain((prevState) => -prevState);  //previous incorrect
 
-    !secondary && !funcClicked && setMain((prevState) => -prevState); 
+    !secondary && !funcClicked && setMain((prevState) => -prevState);
     main !== 0 && funcClicked && setSecondary((prevState) => -prevState);
   }
 
@@ -142,37 +142,37 @@ export default function Calculator() {
           </div>
         </div>
         <div className={classes.numbers}>
-          <div onClick={handleClick} id={7}>
+          <div className={classes.num7} onClick={handleClick} id={7}>
             7
           </div>
-          <div onClick={handleClick} id={8}>
+          <div className={classes.num8} onClick={handleClick} id={8}>
             8
           </div>
-          <div onClick={handleClick} id={9}>
+          <div className={classes.num9} onClick={handleClick} id={9}>
             9
           </div>
-          <div onClick={handleClick} id={4}>
+          <div className={classes.num4} onClick={handleClick} id={4}>
             4
           </div>
-          <div onClick={handleClick} id={5}>
+          <div className={classes.num5} onClick={handleClick} id={5}>
             5
           </div>
-          <div onClick={handleClick} id={6}>
+          <div className={classes.num6} onClick={handleClick} id={6}>
             6
           </div>
-          <div onClick={handleClick} id={1}>
+          <div className={classes.num1} onClick={handleClick} id={1}>
             1
           </div>
-          <div onClick={handleClick} id={2}>
+          <div className={classes.num2} onClick={handleClick} id={2}>
             2
           </div>
-          <div onClick={handleClick} id={3}>
+          <div className={classes.num3} onClick={handleClick} id={3}>
             3
           </div>
           <div onClick={handleClick} id={0} className={classes.zero}>
             0
           </div>
-          <div onClick={handleClick} id=".">
+          <div className={classes.numdot} onClick={handleClick} id=".">
             .
           </div>
         </div>
